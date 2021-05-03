@@ -7,11 +7,55 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Stats preview card component</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { color: hsl(228, 55%, 68%); }
+
+    body {
+      background-color: hsl(233, 47%, 7%);
+    }
+    .container {
+    margin: 100px auto;
+    background-color: hsl(244, 38%, 16%);
+    height: 400px;
+    width:1000px;
+    position: relative; 
+    border-radius: 10px;
+    color:white;
+    }
+    img {
+    height: 400px;
+    right: 0px;
+    position: absolute;
+    border-radius: 0px 10px 10px 0px;
+    
+    }
+    .left-container {
+    width: 400px;
+    padding: 40px 60px;
+    font-family: 'Inter', sans-serif;
+    }
+    .insight {
+      color: hsl(277, 64%, 61%);
+    }
+    .left-title {
+      font-weight: 100px;
+    }
+    .left-body {
+      line-height: 1.5;
+    font-weight: 300;
+    font-size: 16px;
+    }
+    .bottom-left-container {
+      width: 400px;
+    }
+    .inline {
+      display: inline;
+    }
   </style>
 </head>
 <body>
@@ -28,6 +72,24 @@
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <div class="container">
+    <img src="images/image-header-desktop.jpg">
+    <div class="left-container">
+    <h1 class="left-title"> Get <span class="insight">insights</span> that help your business grow. </h1>
+    <p class="left-body"> Discover the benefits of data analytics and make better decisions 
+      regarding revenue, customer experience, and overall efficiency. </p>
+      <div class="bottom-left-container">
+        <div>
+        <h1 class="inline">10k+</h1><p class="inline">COMPANIES</p>
+        </div>
+      <div>
+        <h1 class="inline">314</h1><p class="inline">TEMPLATES</p>
+      </div>
+      <div>
+        <h1 class="inline">12M+</h1><p class="inline">QUERIES</p>
+      </div>
+      </div>
   </div>
 </body>
 </html>
